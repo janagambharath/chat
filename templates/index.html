@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Main Container -->
+    <!-- Animated Background Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Main Chat Container -->
     <div class="chat-container">
         
         <!-- Chat Header -->
         <div class="chat-header">
             <div class="header-left">
                 <div class="avatar">
-                    <span class="avatar-text">LR</span>
+                    <span>LR</span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
                     <span class="status-indicator"></span>
                 </div>
                 <div class="header-info">
-                    <h1 class="bot-name">Lathasri AI Assistant</h1>
+                    <h1 class="bot-name">✨ Lathasri AI Assistant</h1>
                     <p class="bot-status">
-                        <span class="status-dot"></span> Online - Ready to answer questions
+                        <span class="status-dot"></span> Online & Ready to Help
                     </p>
                 </div>
             </div>
@@ -46,15 +58,15 @@
                 </div>
                 <div class="message-content">
                     <div class="message-bubble">
-                        <p>👋 Hi! I'm Lathasri's AI assistant. I can help you learn about:</p>
+                        <p>👋 Hi there! I'm Lathasri's AI assistant. I'd love to help you learn about:</p>
                         <ul>
-                            <li>🎯 Skills & Expertise</li>
-                            <li>💼 Work Experience & Internships</li>
-                            <li>🚀 Projects & Research</li>
+                            <li>🎯 Skills & Technical Expertise</li>
+                            <li>💼 Professional Experience & Internships</li>
+                            <li>🚀 Exciting Projects & Research</li>
                             <li>🎓 Education & Certifications</li>
-                            <li>📧 Contact Information</li>
+                            <li>📧 Contact & Connect</li>
                         </ul>
-                        <p>Feel free to ask me anything!</p>
+                        <p>Ask me anything! 💫</p>
                     </div>
                     <span class="message-time">Just now</span>
                 </div>
@@ -62,7 +74,7 @@
 
             <!-- Quick Questions -->
             <div class="quick-questions">
-                <p class="quick-questions-title">Quick Questions:</p>
+                <p class="quick-questions-title">✨ Quick Questions:</p>
                 <div class="quick-questions-buttons">
                     <button class="quick-btn" data-question="What are your skills?">💻 Skills</button>
                     <button class="quick-btn" data-question="Tell me about your projects">🚀 Projects</button>
@@ -73,7 +85,7 @@
 
         </div>
 
-        <!-- Typing Indicator (Hidden by default) -->
+        <!-- Typing Indicator -->
         <div class="typing-indicator" id="typingIndicator" style="display: none;">
             <div class="message-avatar">
                 <span>LR</span>
@@ -111,12 +123,12 @@
                     type="text" 
                     class="chat-input" 
                     id="userInput" 
-                    placeholder="Ask me anything about Lathasri's portfolio..." 
+                    placeholder="Ask me anything about Lathasri's portfolio... ✨" 
                     autocomplete="off"
                     required
                 />
                 <button type="submit" class="send-button" id="sendBtn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="22" y1="2" x2="11" y2="13"></line>
                         <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                     </svg>
@@ -126,9 +138,9 @@
 
     </div>
 
-    <!-- Footer Credit -->
+    <!-- Footer -->
     <div class="footer-credit">
-        <p>Powered by AI • Built with Flask & OpenRouter</p>
+        <p>✨ Powered by AI • Built with Love & Innovation 💫</p>
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
